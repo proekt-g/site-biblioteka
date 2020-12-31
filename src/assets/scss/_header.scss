@@ -1,0 +1,49 @@
+.header {
+  top: 29px;
+  z-index: 99999999999999;
+  @media (max-width: 1300px) {
+    top: 21px;
+  }
+  @media (max-width: 900px) {
+    top: 25px;
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__location,
+  &__phone {
+    display: flex;
+    align-items: center;
+    &-icon {
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+  }
+  &__phone:hover {
+    .header__phone-icon {
+      margin-right: 5px;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    &__element {
+      margin: 0 25px;
+      background-image: linear-gradient(180deg, #b29457 50%, #fffef5 81.2%);
+      @media (max-width: 900px) {
+        margin: 0 15px;
+      }
+      &:hover {
+        background-image: linear-gradient(180deg, #fff 50%, #fff 100%);
+        // color: #fff;
+      }
+      &-text {
+        font-family: Helvetica;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}
